@@ -1,0 +1,34 @@
+@charset 'utf-8';
+/* box 클래스*/
+.box{
+    background-color: aliceblue;
+    background-image: url('cat.jpg');
+    /*
+    background-position-x: center; x축 기준으로 가운데
+    background-position-y: center; y축 기준으로 가운데
+    */
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+div { 
+    font : normal 24px verdata;
+    cursor: pointer;
+}
+.dropText   {text-shadow : 3px 3px;}
+.redText    {text-shadow : 3px 3px red;}
+.blurText   {text-shadow : 3px 3px 5px skyBlue;}
+.glowEffect {text-shadow : 0px 0px 3px red;}
+.wordArtEffect {
+    color : white;
+    text-shadow : 0px 0px 3px darkBlue;
+}
+.threeDEffect { 
+	color : white;
+	text-shadow : 2px 2px 4px black;
+}
+.multiEffect { 
+	color : yellow;
+	text-shadow : 2px 2px 2px black, 
+					0 0 25px blue, 0 0 5px darkblue;
+}
