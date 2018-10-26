@@ -1,0 +1,17 @@
+@charset 'utf-8';
+*{
+    margin: 0;
+}
+.nav{
+    background-color: aquamarine;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 50px;
+    right: 0;
+}
+.content{
+    background-color: aliceblue;
+    height: 1000px;
+    margin-top: 70px;
+}
