@@ -16,9 +16,9 @@
     /* height: 170px; */
 }
 .nav-bottom{
-    border: 1px solid black;
-    border-right: none;
-    border-left: none;
+    border-top: 1px solid rgb(241,243,246);
+    border-bottom: 1px solid rgb(208,216,228);
+   
     /*
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -148,6 +148,9 @@ video{
     color: #888;
     float: left;
 }
+.favorite:hover{
+    text-decoration: underline;
+}
 .jrnaver,
 .happy{
     padding: 5px;
@@ -159,9 +162,278 @@ video{
     height: 11px;
     width: 58px;/* 부모 태그의 가로의 길이가 미지정이기 때문에 */
 }
+.jrnaver-inner:hover{
+    background-position: -68px -120px;
+}
 .happy-inner{
     background-image: url('https://s.pstatic.net/static/www/img/2018/sp_main_v181019.png');
     background-position: -143px -52px;
     height: 11px;
     width: 34px;
+}
+.happy-inner:hover{
+    background-position: -143px -73px;
+}
+.nav-inner{
+    height: 32px;
+    font-size: 0;
+    position: relative;
+}
+.inline-block{
+    display: inline-block;
+}
+.item1{
+    width: 303px;
+    height: 32px;
+    padding: 16px 0 0 4px;
+    font-size: 0px;
+}
+/* item1-1~ item1-7의 display속성을 inline-block으로 바꾸고
+높이를 16px로 설정 */
+.item1>a>div,
+.item2>a>div{
+    display: inline-block;
+    height: 16px;
+    background-image: url('https://s.pstatic.net/static/www/img/2018/sp_nav_v181019.png');
+}
+.item1-1{
+    width: 25px;
+    background-position: -244px -233px;
+}
+.item1-2{
+    width: 27px;
+    background-position: -279px -130px;
+    margin-left: 14px;
+}
+.item1-3{
+    width: 40px;
+    background-position: -150px -182px;
+    margin-left: 14px;
+}
+.item1-4{
+    width: 40px;
+    background-position: -102px -156px;
+    margin-left: 14px;
+}
+.item1-5{
+    width: 26px;
+    background-position: -128px -104px;
+    margin-left: 14px;
+}
+.item1-6{
+    width: 25px;
+    background-position: -107px -285px;
+    margin-left: 14px;
+}
+.item1-7{
+    width: 32px;
+    background-position: -125px -130px;
+    margin-left: 14px;
+    margin-top: -1px;
+}
+
+.item2{
+    width: 366px;
+    height: 32px;
+    padding: 16px 0 0 14px;
+    font-size: 0;
+}
+.item2-1{
+    width: 26px;
+    background-position: 0 -259px;
+    margin-left: 0px;
+}
+.item2-2{
+    width: 28px;
+    background-position: -279px -26px;
+    margin-left: 14px;
+}
+.item2-3{
+    width: 26px;
+    background-position: -108px -259px;
+    margin-left: 14px;
+}
+.item2-4{
+    width: 40px;
+    background-position: -152px -156px;
+    margin-left: 14px;
+}
+.item2-5{
+    width: 27px;
+    background-position: -279px -208px;
+    margin-left: 14px;
+}
+.item2-6{
+    width: 27px;
+    background-position: -279px -52px;
+    margin-left: 14px;
+}
+.item2-7{
+    width: 26px;
+    background-position: -144px -259px;
+    margin-left: 14px;
+}
+.item2-8{
+    width: 13px;
+    background-position: -140px -78px;
+    margin-left: 14px;
+}
+.item2-9{
+    width: 27px;
+    background-position: -279px -78px;
+    margin-left: 14px;
+}
+.item3{
+    width: 1px;
+    height: 14px;
+    background-color: #ebeef3;
+    margin: 18px 16px 0;
+}
+.item4{
+    width: 55px;
+    height: 16px;
+    background-image: url('https://s.pstatic.net/static/www/img/2018/sp_nav_v181019.png');
+    background-position: 0 -104px;
+}
+.item5{
+    width: 198px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: calc( (100% + 15px) / 2);
+    margin-top: -10px;
+    line-height: 20px;
+}
+.real-num{
+    color: #00ab33;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    line-height: 20px;
+}
+.real-search{
+    font-size: 14px;
+}
+.item6{
+    width: 11px;
+    height: 6px;
+    position: absolute;
+    right: 0;
+    top: calc( (100% + 15px) / 2);
+    margin-top: -3px;
+    background-image: url(https://s.pstatic.net/static/www/img/2018/sp_main_v181019.png);
+    background-position: -187px -73px;
+}
+/* 로고 관련 */
+.logo-img{
+    display: block;/* 로고 이미지 크기를 조절을 위해 */
+    width: 198px;
+    height: 48px;
+    background-image: url('https://s.pstatic.net/static/www/img/2018/sp_search.svg');
+    background-position: -4px -4px;
+}
+.logo-box{
+    position: absolute;
+    left: -4px;
+    top: 50%;
+    margin-top: -25px;
+}
+.input-box{
+    display: inline-block;
+    width: 474px;
+    height: 49px;
+    border: 2px solid #03cf5d;
+}
+.search-box{
+    position: absolute;
+    left: 219px;
+    top: 50%;
+    margin-top: -20px;
+}
+.search-btn{
+    width: 49px;
+    height: 49px;
+    background-color: #03cf5d;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 0;
+}
+.btn-img{
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    left: 14px;
+    top: 14px;
+    background-image: url('https://s.pstatic.net/static/www/img/2018/sp_search.svg');
+    background-position: -4px -60px;
+}
+.auto-search{
+    width: 27px;
+    height: 42px;
+    position: absolute;
+    right: 49px;
+    top: 50%;
+    margin-top: -23px;
+    padding: 19px 12px 19px 6px;
+    cursor: pointer;
+}
+.auto-down{
+    width: 9px;
+    height: 4px;
+    background-image: url('https://s.pstatic.net/static/www/img/2018/sp_search.svg');
+    background-position: -87px -60px;
+}
+.keyboard{
+    width: 31px;
+    height: 42px;
+    position: absolute;
+    right: 76px;
+    top: 50%;
+    margin-top: -23px;
+    padding: 15px 6px;
+    cursor: pointer;
+}
+.keyboard-img{
+    width: 19px;
+    height: 11px;
+    background-image: url('https://s.pstatic.net/static/www/img/2018/sp_search.svg');
+    background-position: -33px -60px;
+}
+.box5-top,
+.box5-bottom{
+    background-color: white;
+}
+.box5-top{
+    height: 34px;
+    border-bottom: 1px solid rgb(235,238,243);
+    padding-left: 15px;
+}
+.box5-bottom{
+    height: 106px;
+}
+.box5-item1{
+    display: inline-block;
+    width: 208px;
+    height: 33px;
+    padding: 9px 0 7px 0;
+}
+.day{
+    font-weight: bold;
+    line-height: 17px;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+.fab{
+    color: rgb(227,231,238);
+}
+.location{
+    color: #888;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.location:hover{
+    text-decoration: underline;
 }
