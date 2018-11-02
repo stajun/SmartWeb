@@ -72,9 +72,12 @@
 }
 .box2{
     height: 46px;
+    position: relative;
+    background-color: white;
 }
 .box3{
     height: 246px;
+    background-color: white;
 }
 .box4{
     height: 120px;
@@ -339,7 +342,7 @@ video{
 }
 .input-box{
     display: inline-block;
-    width: 474px;
+    width: 523px;
     height: 49px;
     border: 2px solid #03cf5d;
 }
@@ -407,6 +410,7 @@ video{
     height: 34px;
     border-bottom: 1px solid rgb(235,238,243);
     padding-left: 15px;
+    position: relative;
 }
 .box5-bottom{
     height: 106px;
@@ -424,6 +428,55 @@ video{
     text-decoration: none;
     color: black;
 }
+.box5-item2{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    margin-right: 78px;
+    color: #888;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: Tahoma,sans-serif;
+}
+.color-black{
+    color: black;
+    font-size: 12px;
+}
+.box3-dir,
+.box5-item3{
+    width: 68px;
+    height: 33px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 0;
+}
+.box3-prev,
+.box3-next,
+.box5-prev,
+.box5-next{
+    display: inline-block;
+    text-align: center;
+    width: 34px;
+    height: 33px;
+    border-left: 1px solid #ebeef3;
+    text-decoration: none;
+    padding: 11px 0;
+}
+.btn-prev{
+    width: 6px;
+    height: 11px;
+    display: inline-block;
+    background-image: url('https://s.pstatic.net/static/www/img/2017/sp_timesquare_v170913a.png');
+    background-position: -433px -303px;
+}
+.btn-next{
+    width: 6px;
+    height: 11px;
+    display: inline-block;
+    background-image: url('https://s.pstatic.net/static/www/img/2017/sp_timesquare_v170913a.png');
+    background-position: -433px -324px;
+}
 .fab{
     color: rgb(227,231,238);
 }
@@ -436,4 +489,192 @@ video{
 }
 .location:hover{
     text-decoration: underline;
+}
+.input-box>input{
+    outline: 0;
+    border: 0;
+    width: 405px;
+    height: 23px;
+    margin: 12px 0 0 9px;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: bold;
+}
+.box2-inner{
+    padding: 15px 0 0 16px;
+}
+.box2-inner::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.news{
+    float: left;
+    display: inline-block;
+}
+.news>a{
+    text-decoration: none;
+    color: black;
+    font-family: NanumSquare,Dotum,"돋움",Helvetica,AppleSDGothicNeo,sans-serif;
+    line-height: 16px;
+    margin-right: 12px;
+}
+.icon-next{
+    background-image: url('https://s.pstatic.net/static/www/img/2018/sp_newscast_v180511.png');
+    background-position: -256px -100px;
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    margin-left: 8px;
+}
+.news-content{
+    width: 340px;
+    height: 20px;
+    float: left;
+}
+.news-content>a{
+    text-decoration: none;
+    color: #222;
+    font-size: 12px;
+}
+.news-content>a:visited{
+    color: #888;
+}
+.news-content>a:hover{
+    text-decoration: underline;
+}
+.box2-inner2{
+    position: absolute;
+    top: 50%;
+    right: 2px;
+    margin-top: -7px;
+    list-style: none;
+}
+.box2-inner2::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.ul-item{
+    display: inline-block;
+    float: left;
+    margin-right: 14px;
+    font-size: 12px;
+}
+.ul-item>a{
+    display: block;
+    height: 15px;
+    line-height: 16px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #666;
+}
+.ul-item>a:hover{
+    color: #000;
+}
+.ul-item>a.green{
+    color: #00ab33;
+}
+.ul-item>a.green:hover{
+    color: #0b9500;
+}
+
+.box3-inner1{
+    height: 45px;
+    border-bottom: 1px solid #ebeef3;
+    position: relative;
+}
+.box3-inner2{
+    height: 200px;
+}
+.box3-item1{
+    padding: 13px 0 0 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0;
+}
+.box3-item1>a{
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+.box3-item2{
+    position: absolute;
+    padding: 13px 0;
+    top: 0;
+    left: 102px;
+    height: 44px;
+    line-height: 20px;
+    letter-spacing: -1px;
+}
+.box3-menu::after,
+.box3-item3::after,
+.box3-item2::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.my,
+.all{
+    display: inline-block;
+    font-weight: bold;
+    float: left;
+    cursor: pointer;
+}
+.my{
+    color: #666;
+}
+.box3-item2>.item3{
+    margin: 2px 15px 0;
+    float: left;
+}
+.box3-item3{
+    height: 44px;
+    width: 216px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.box3-menu{
+    width: 126px;
+    height: 44px;
+    display: inline-block;
+    float: left;
+}
+.box3-dir{
+    width: 90px;
+    height: 44px;
+}
+.box3-prev,
+.box3-next{
+    width: 44px;
+    height: 44px;
+    padding: 16px 0;
+}
+.box3-menus{
+    width: 32px;
+    height: 44px;
+    margin-right: 10px;
+    float: left;
+}
+.box3-icons{
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-top: 13px;
+    background-image: url('https://s.pstatic.net/static/www/img/2018/sp_newscast_v180511.png');
+}
+.box3-icons.menu{
+    background-position: -228px -124px;
+}
+.box3-icons.list{
+    background-position: 0 -193px;
+}
+.box3-icons.setting{
+    background-position: -28px -193px;
 }
