@@ -8,6 +8,9 @@
     padding: 0;
     font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
 }
+ul,ol{
+    list-style: none;
+}
 
 .container{
     min-width: 1100px;
@@ -503,11 +506,7 @@ video{
 .box2-inner{
     padding: 15px 0 0 16px;
 }
-.box2-inner::after{
-    clear: both;
-    content: "";
-    display: block;
-}
+
 .news{
     float: left;
     display: inline-block;
@@ -550,11 +549,7 @@ video{
     margin-top: -7px;
     list-style: none;
 }
-.box2-inner2::after{
-    clear: both;
-    content: "";
-    display: block;
-}
+
 .ul-item{
     display: inline-block;
     float: left;
@@ -586,7 +581,8 @@ video{
     position: relative;
 }
 .box3-inner2{
-    height: 200px;
+		height: 200px;
+		position: relative;
 }
 .box3-item1{
     padding: 13px 0 0 16px;
@@ -612,6 +608,9 @@ video{
     line-height: 20px;
     letter-spacing: -1px;
 }
+.box2-inner2::after,
+.box2-inner::after,
+.api-list::after,
 .box3-menu::after,
 .box3-item3::after,
 .box3-item2::after{
@@ -677,4 +676,50 @@ video{
 }
 .box3-icons.setting{
     background-position: -28px -193px;
+}
+.api-list{
+  width: 104%;
+  height: 199px;  
+  overflow: hidden;
+  font-size: 0;
+}
+ul.api-list>li{
+    width: 123px;
+    height: 67px;
+    z-index: 0;
+    padding: 21px 0 22px;
+    border-right: 1px solid #f1f3f6;
+    float: left;
+}
+ul.api-list>li>a>img{
+    height: 24px;
+    width: auto;
+}
+ul.api-list>li>a{
+    display: block;
+    text-align: center;
+}
+.border-right{
+	width: 1px;
+	height: 199px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #fff;
+	z-index: 1;
+}
+.border-center1,
+.border-center2{
+	width: 738px;
+	height: 1px;
+	position: absolute;
+	background-color: #f1f3f6;
+	z-index: 1;
+	left: 0;
+}
+.border-center1{
+	top: 66px;
+}
+.border-center2{
+	bottom: 66px;
 }
