@@ -1,0 +1,103 @@
+@charset 'utf-8';
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.top{
+	height: 143px;
+}
+.bottom{
+	padding-top : 10px;
+	background-color: black;/*rgb(242,242,242);*/
+	height: 446px;
+}
+.bottom-in{
+	position: relative;
+}
+.contents{
+	width: 33.3%;
+	background-color: white;
+	position: absolute;
+}
+#box1{
+	height: 246px;
+	left: 0;
+	top: 0;
+}
+#box2{
+	height: 75px;
+	left: calc(100% / 3);
+	top: 0;
+}
+#box3{
+	height: 155px;
+	left: calc(100% - 33.3%);
+	top: 0;
+}
+#box4{
+	height: 60px;
+	left: 0;
+	top: 256px;/* box1크기 + 간격 10px*/
+}
+#box5{
+	height: 86px;
+	left: calc(100% / 3);
+	top: 85px;/* box2크기 + 간격 10px*/
+}
+#box6{
+	height: 261px;
+	left: calc(100% - 33.3%);
+	top: 165px;/* box3크기 + 간격 10px*/
+}
+#box7{
+	height: 259px;
+	left: 0;
+	top: 326px;/* box4의 top + box4의 크기 + 간격 10px*/
+}
+@media(max-width:1024px){
+	.contents{
+		width: calc(99.95% / 2);
+	}
+	#box1,#box3,#box5,#box7{
+		left:0;
+	}
+	#box2,#box4,#box6{
+		left: calc(100% - 99.95% / 2);
+	}
+	/* #box1, #box2{
+		top: 0;
+	} */
+	#box3{
+		top: 256px;/* box1의 길이 + 간격 10px*/
+	}
+	#box4{
+		top: 85px;/* box2의 길이 + 간격 10px*/
+	}
+	#box5{
+		top: 421px;/* box3의 top + box3의 길이 + 간격 10px*/
+	}
+	#box6{
+		top: 155px;/* box4의 top + box4의 길이 + 간격 10px*/
+	}
+	#box7{
+		top: 517px;/* box5의 top + box5의 길이 + 간격 10px*/
+	}
+	.bottom{
+		height: calc(517px  + 259px + 10px + 10px);
+		/* 가장 마지막에 있는 박스의 top 
+				+ 가장 마지막에 있는 박스의 길이 + 간격 10px 
+				+ padding 10px */
+	}
+}
+@media (max-width:640px){
+	.contents{
+		position: static;
+		margin-bottom: 10px;
+		width: 100%;
+	}
+	.bottom{
+		height: 100%;
+	}
+}
