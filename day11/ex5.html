@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 기본 document.getElementById 예제 -->
+	<input type="text" id="inputId">
+	<button onclick="alertMessage()">클릭</button>
+	<br>
+	<!-- 응용 document.getElementById 예제 : 비밀번호 확인 예제-->
+	<input type="password" id="pw">
+	<input type="password" id="repw">
+	<button onclick="comparePw()">비밀번호 확인</button>
+	<br>
+	<!-- 기본 document.createElement 예제 -->
+	<!-- 상세보기 버튼을 클릭하면 div에 상세내용을 출력하는 예제 -->
+	<button onclick="showDetail()">상세보기</button>
+	<div id="detail"></div>
+
+	<script>
+		function alertMessage(){
+			// 입력창에 있는 텍스트를 가져옴
+			var input = document.getElementById('inputId').value;
+			alert(input);
+		}
+		function comparePw(){
+			var pw = document.getElementById('pw').value;
+			var repw = document.getElementById('repw').value;
+			if(pw == ""){
+				alert('비밀번호를 입력하세요.');
+				return ;
+			}
+			if(pw == repw)
+				alert('일치합니다.');
+			else
+				alert('비밀번호와 비밀번호 확인이 일치하지 않습니다.')
+		}
+		var str="123";
+		var num=123;
+		//==은 자료형에 상관없이 값이 일치할 때
+		if(num == str)// !=
+			console.log('문자열 : ',str,'과 숫자',num,'은 같습니다.');
+		else
+			console.log('문자열 : ',str,'과 숫자',num,'은 다릅니다.');
+		//===은 자료형도 일치하고 값도 일치할 때
+		if(num === str)//!==
+			console.log('문자열 : ',str,'과 숫자',num,'은 완전히 같습니다.');
+		else
+			console.log('문자열 : ',str,'과 숫자',num,'은 완전히 같지 않습니다.');
+
+		function showDetail(){
+			var detailNode = document.getElementById('detail');
+			var subDetail = document.createElement('span');
+			var text = document.createTextNode('상세 내용은 xxxx입니다.');
+			subDetail.appendChild(text);
+			clear();
+			detailNode.appendChild(subDetail);
+		}
+		function clear(){
+			var detailNode = document.getElementById('detail');
+			var subDetail = document.querySelector('#detail span');
+			if(subDetail != null)
+				detailNode.removeChild(subDetail);
+		}
+
+	</script>
+</body>
+</html>
