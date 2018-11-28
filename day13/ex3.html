@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<a href="http://naver.com" target="_blank">네이버</a>
+	<button id="btn1">버튼</button>
+	<script >
+		$(document).ready(function(){
+			$('#btn1').click(function(){
+				var a = $('a');
+				//1. a의 텍스트 정보를 가져옴
+				var text = a.text();
+				//2. a의 텍스트 정보가 네이버이면
+				if(text == '네이버'){
+					//3. a의 href 속성을 다음으로
+					a.attr('href','http://daum.net');
+					//4. a의 텍스트를 다음으로 수정
+					a.text('다음');
+				}
+				//2.1a의 텍스트 정보가 다음이면
+				else if(text == '다음'){
+					//3.1a의 href 속성을 네이버로
+					a.attr('href','http://naver.net');
+					//4.1a의 텍스트를 네이버로 수정
+					a.text('네이버');
+				}
+			});
+		});
+	</script>
+</body>
+</html>
