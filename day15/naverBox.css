@@ -415,6 +415,9 @@ video{
 .box5-bottom{
     background-color: white;
 }
+.box5-bottom{
+	display: none;
+}
 .box5-top{
     height: 34px;
     border-bottom: 1px solid rgb(235,238,243);
@@ -494,7 +497,8 @@ video{
     font-size: 12px;
     line-height: 16px;
     font-weight: 400;
-    text-decoration: none;
+		text-decoration: none;
+		display: none;
 }
 .location:hover{
     text-decoration: underline;
@@ -833,9 +837,27 @@ ul.api-list>li>a{
 	z-index: 2;
 	display: none;
 }
+.api-list>li>div{
+	display: none;
+	width: 95px;
+	height: 30px;
+	margin: 0 auto;
+	background-color: white;
+}
+ul.api-list>li:hover{
+	background-color: #f9fafc;
+}
 /* 공통 클래스들 */
 .real-search-box:hover,
 #auto-box.display-block,
+ul.api-list>li>div.display-block,
 .display-block{
 	display: block;
+}
+ul.api-list>li>a.display-none,
+.display-none{
+	display: none;
+}
+.display-inline-block{
+	display: inline-block;
 }
