@@ -197,8 +197,7 @@ video{
 }
 /* item1-1~ item1-7의 display속성을 inline-block으로 바꾸고
 높이를 16px로 설정 */
-.item1>a>div,
-.item2>a>div{
+.item1>a>div{
     display: inline-block;
     height: 16px;
     background-image: url('https://s.pstatic.net/static/www/img/2018/sp_nav_v181019.png');
@@ -238,57 +237,65 @@ video{
     margin-left: 14px;
     margin-top: -1px;
 }
-
 .item2{
-    width: 366px;
     height: 32px;
     padding: 16px 0 0 14px;
-    font-size: 0;
+		font-size: 0;
 }
 .item2-1{
+	width: 64px;
+	height: 30px;
+	margin-left: 14px;
+	display: block;
+	margin-top: -9px;
+	border: #000 1px solid;
+	float: left;
+}
+.back-img{
+	border: none;
+	margin-top : 0;
+	display: inline-block;
+	height: 16px;
+	background-image: url('https://s.pstatic.net/static/www/img/2018/sp_nav_v181019.png');
+}
+.dici{
     width: 26px;
     background-position: 0 -259px;
-    margin-left: 0px;
 }
-.item2-2{
+.newsi{
     width: 28px;
     background-position: -279px -26px;
-    margin-left: 14px;
+    
 }
-.item2-3{
+.stocki{
     width: 26px;
     background-position: -108px -259px;
     margin-left: 14px;
 }
-.item2-4{
+.dealeri{
     width: 40px;
     background-position: -152px -156px;
     margin-left: 14px;
 }
-.item2-5{
+.mapi{
     width: 27px;
     background-position: -279px -208px;
-    margin-left: 14px;
 }
-.item2-6{
+.moviei{
     width: 27px;
     background-position: -279px -52px;
-    margin-left: 14px;
 }
-.item2-7{
+.musici{
     width: 26px;
     background-position: -144px -259px;
-    margin-left: 14px;
 }
-.item2-8{
+.booki{
     width: 13px;
     background-position: -140px -78px;
-    margin-left: 14px;
 }
-.item2-9{
+.webtooni{
     width: 27px;
     background-position: -279px -78px;
-    margin-left: 14px;
 }
 .item3{
     width: 1px;
@@ -785,7 +792,7 @@ ul.api-list>li>a{
 	padding-top: 8px;
 	height: 45.8px;
 	background: #fff;
-	width: 211px;
+	width: 230px;
 }
 .all-service:visited,
 .all-service{

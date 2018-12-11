@@ -87,5 +87,27 @@ $(document).ready(function(){
 	$('.rank-lists').first().css('display','block');
 	$('.rank-lists').last().css('display','none');
 
+	var selectedMenuCnt = 0;
+	var menuArr = ["dici", "newsi", "stocki", "dealeri", "mapi", 
+		"moviei", "musici", "booki", "webtooni"];
+	$('.menu-setting').click(function(){
+		var cnt = 0;
+		$('.item2-1').each(function(){
+			$(this).prop('class','item2-1');
+			cnt++;
+			if(cnt > 5){
+				$(this).addClass('display-none');
+			}
+		});
+	});
+	$('.menu-close').click(function(){
+		var i =0;
+		if(selectedMenuCnt == 0){
+			$('.item2-1').each(function(){
+				$(this).prop('class','item2-1 back-img');
+				$(this).addClass(menuArr[i++]);
+			});
+		}
+	});
 });
 
