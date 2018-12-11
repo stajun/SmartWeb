@@ -71,4 +71,21 @@ $(document).ready(function(){
 		}
 		displayBox5(index);
 	});
+
+	$('.rank-left').click(function(){
+		$('.rank-lists').first().css('display','block');
+		$('.rank-lists').last().css('display','none');
+		$(this).css('background-color','#f9fafc');
+		$('.rank-right').css('background-color','#ffffff');
+	});
+	$('.rank-right').click(function(){
+		$('.rank-lists').last().css('display','block');
+		$('.rank-lists').first().css('display','none');
+		$(this).css('background-color','#f9fafc');
+		$('.rank-left').css('background-color','#ffffff');
+	});
+	$('.rank-lists').first().css('display','block');
+	$('.rank-lists').last().css('display','none');
+
 });
+

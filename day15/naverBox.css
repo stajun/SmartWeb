@@ -828,13 +828,14 @@ ul.api-list>li>a{
 	background-image: url('https://s.pstatic.net/static/www/img/2018/sp_themecast_v180607.png');
 }
 .real-search-box{
-	width: 400px;
-	height: 400px;
+	width: 288px;
+	min-height: 332px;
 	position: absolute;
 	right: 0;
 	top: 0;
 	background-color: white;
 	z-index: 2;
+	border: 1px solid #bec8d8;
 	display: none;
 }
 .api-list>li>div{
@@ -846,6 +847,39 @@ ul.api-list>li>a{
 }
 ul.api-list>li:hover{
 	background-color: #f9fafc;
+}
+.real-top{
+	height: 46px;
+	padding: 26px 26px 0;
+}
+.real-rank{
+	height: 30px;
+	padding: 0 9px 6px 17px;
+}
+.rank{
+	height: 24px;
+	padding-top: 5px;
+	border: 1px solid #e3e7ee;
+	display: block;
+	float: left;
+	text-align: center;
+	text-decoration: none;
+	color: #888;
+	font-size: 12px;
+	line-height: 14px;
+	margin: 0;
+}
+.rank-left{
+	width: 128px;
+	border-right: none;
+	background-color: #f9fafc;
+}
+.rank-right{
+	width: 129px;
+}
+.rank-list{
+	height: 22px;
+	padding: 4px 0 0 21px;
 }
 /* 공통 클래스들 */
 .real-search-box:hover,
