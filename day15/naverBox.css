@@ -784,6 +784,7 @@ ul.api-list>li>a{
 	width: 1100px;
 	margin: 0 auto;
 	height: 100%;
+	padding: 20px 0 15px 0;
 }
 .sub-menu-icons{
 	position: absolute;
@@ -792,26 +793,24 @@ ul.api-list>li>a{
 	padding-top: 8px;
 	height: 45.8px;
 	background: #fff;
-	width: 230px;
+	width: 240px;
 }
-.all-service:visited,
 .all-service{
-	float: left;
 	width: 98px;
-	height: 28px;
-	border: 1px solid #e3e7ee;
-	background: #fff;
-	color: #444;
-	text-align: center;
-	text-decoration: none;
-	font-size: 12px;
-	line-height: 29px;
 }
-.menu-setting:visited,
 .menu-setting{
-	float: left;
-	margin-left: 5px;
 	width: 68px;
+}
+.init{
+	width: 70px;
+}
+.ok, .cancel{
+	width: 55px;
+}
+.sub-menu-a,
+.sub-menu-a:visited{
+	float: right;
+	margin-left: 5px;
 	height: 28px;
 	border: 1px solid #e3e7ee;
 	background: #fff;
@@ -822,7 +821,7 @@ ul.api-list>li>a{
 	line-height: 29px;
 }
 .menu-close{
-	float: left;
+	float: right;
 	margin: 2px 0 0 9px;
 	padding: 5px;
 	background: #fff;
@@ -887,6 +886,14 @@ ul.api-list>li:hover{
 .rank-list{
 	height: 22px;
 	padding: 4px 0 0 21px;
+}
+.sub-menu-div{
+	float: left;
+	height: 292px;
+	width: 156px;
+	padding-left: 16px;
+	border-left: 1px solid black;/*#f1f3f6;*/
+	border-right: 1px solid black;/*#f1f3f6;*/
 }
 /* 공통 클래스들 */
 .real-search-box:hover,
