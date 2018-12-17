@@ -112,11 +112,7 @@ $(document).ready(function(){
 		$('.sub-menu-div input[type=checkbox]').each(function(){
 			$(this).removeClass('display-none');
 		});
-		$('.all-service').addClass('display-none');
-		$('.menu-setting').addClass('display-none');
-		$('.ok').removeClass('display-none');
-		$('.init').removeClass('display-none');
-		$('.cancel').removeClass('display-none');
+		subDetailMenu(1);
 	});
 	$('.menu-close').click(function(){
 		selectedMenu = [];
@@ -130,27 +126,8 @@ $(document).ready(function(){
 		initCheck();
 		checkMenu();
 		selectedMenu = menuArr2.slice();
-		$('.all-service').removeClass('display-none');
-		$('.menu-setting').removeClass('display-none');
-		$('.ok').addClass('display-none');
-		$('.init').addClass('display-none');
-		$('.cancel').addClass('display-none');
-		var i = 0;
-		if(menuArr2.length == 0){
-			$('.item2-1').each(function(){
-				$(this).prop('class','item2-1 back-img');
-				$(this).addClass(menuArr[i++]);
-			});
-		}else{
-			$('.item2-1').each(function(){
-				if(menuArr2.length > i){
-					$(this).prop('class','item2-1 back-img');
-					$(this).addClass(menuArr2[i++]);
-				}else{
-					$(this).prop('class','item2-1 display-none');
-				}
-			});
-		}
+		subDetailMenu(0);
+		displayMenu();
 		$('.sub-menu-div input[type=checkbox]').each(function(){
 			$(this).addClass('display-none');
 		});
@@ -231,11 +208,7 @@ $(document).ready(function(){
 		$('.sub-menu-div input[type=checkbox]').each(function(){
 			$(this).addClass('display-none');
 		});
-		$('.all-service').removeClass('display-none');
-		$('.menu-setting').removeClass('display-none');
-		$('.ok').addClass('display-none');
-		$('.init').addClass('display-none');
-		$('.cancel').addClass('display-none');
+		subDetailMenu(0);
 	}	
 	function initCheck(){
 		$('.sub-menu-div label').each(function(){
@@ -265,6 +238,21 @@ $(document).ready(function(){
 					$(this).prop('class','item2-1 display-none');
 				}
 			});
+		}
+	}
+	function subDetailMenu(toggle){
+		if(toggle == 0){
+			$('.all-service').removeClass('display-none');
+			$('.menu-setting').removeClass('display-none');
+			$('.ok').addClass('display-none');
+			$('.init').addClass('display-none');
+			$('.cancel').addClass('display-none');
+		}else{
+			$('.all-service').addClass('display-none');
+			$('.menu-setting').addClass('display-none');
+			$('.ok').removeClass('display-none');
+			$('.init').removeClass('display-none');
+			$('.cancel').removeClass('display-none');
 		}
 	}
 });
