@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="//code.jquery.com/jquery-3.3.1.js"></script>
+	<title>Document</title>
+	<style>
+	div{
+		width: 80px;
+		height: 80px;
+		border: 1px solid black;
+		display: inline-block;
+		font-size: 20px;
+		line-height: 75px;
+		text-align: center;
+	}
+	.checked{
+		background-color: orange;
+	}
+	</style>
+</head>
+<body>
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
+	<script>
+		$('div').click(function(){
+			//checked 클래스를 가진 객체의 갯수
+			var checkedCnt = $('.checked').length;
+			//최대 선택 갯수
+			var maxCnt = 3;
+			//선택된 갯수가 최대 갯수가 아니면 토글을 하고
+			if(checkedCnt < maxCnt){
+				$(this).toggleClass('checked');
+			}else{
+				//클릭한 객체의 class에 checked 클래스가 없으면
+				if($(this).prop('class').indexOf('checked') == -1)
+					alert('최대 3개까지 선택할 수 있습니다.');
+				$(this).removeClass('checked');
+			}
+		});
+		var arr = "1234561234561111111";
+		var comString = "1"
+		var index = arr.indexOf(comString);
+		var cnt = index!=-1 ? 1 : 0;
+		// 조건식 ? 참결과 : 거짓결과;
+		/*
+		if(조건식){
+			참결과
+		}
+		else{
+			거짓결과
+		}
+		*/
+		while(index != -1){
+			index = arr.indexOf(comString,index+1);
+			index!=-1 ? ++cnt : cnt;
+		}
+		console.log('1의 갯수 : ' + cnt);
+	</script>
+</body>
+</html>
