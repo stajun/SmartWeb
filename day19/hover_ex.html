@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="//code.jquery.com/jquery-3.3.1.js"></script>
+	<title>Document</title>
+	<style>
+	div{
+		position: absolute;
+		top: calc(50vh - 100px);
+		left: calc(50vw - 100px);
+		width: 200px;
+		height: 200px;
+		border: 1px solid black;
+		text-align: center;
+		font-size: 0px;
+		line-height: 194px;
+	}
+	div:hover{
+		background-color: ghostwhite;
+		font-size: 30px;
+	}
+	</style>
+</head>
+<body>
+	<div>hover 예제</div>
+	<script>
+	/* 
+	hover(함수1, 함수2) : 함수1은 들어올 때 호출, 함수2는 나갈 때 호출
+	hover(함수)         : 들어올 때와 나갈때 함수를 각각 호출
+	*/
+	//방법1
+	// $('div').hover(function(){
+	// 	$(this).text('hover 예제');
+	// },function(){
+	// 	$(this).text('');
+	// });
+	//방법2
+	//마우스가 div로 들어올 때
+	// $('div').mouseenter(function(){
+	// 	$(this).text('hover 예제');
+	// });
+	// //마우스가 div로 나갈 때
+	// $('div').mouseleave(function(){
+	// 	$(this).text('');
+	// });
+	</script>
+</body>
+</html>
