@@ -1,0 +1,31 @@
+@charset 'utf-8';
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.bg{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url('../images/main_visual_img02.gif');
+	background-size: cover;
+	background-position: 50% 50%;
+	animation-name: ani;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	opacity: 0.4;
+}
+body{
+	background-color: black;
+}
+@keyframes ani{
+	0%	{background-image: url('../images/main_visual_img01.gif');}
+	25%	{background-image: url('../images/main_visual_img02.gif');}
+	50%	{background-image: url('../images/main_visual_img03.gif');}
+	75%	{background-image: url('../images/main_visual_img04.gif');}
+	100%{background-image: url('../images/main_visual_img01.gif');}
+}
