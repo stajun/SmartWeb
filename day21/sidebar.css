@@ -1,0 +1,44 @@
+@charset 'utf-8';
+nav::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+p{
+    font-size: 40px;
+    opacity: 0;
+    animation-name: open;
+    animation-duration: 2s;
+    animation-iteration-count: none;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    height: 200px;
+    overflow: auto;
+}
+p::-webkit-scrollbar{
+    display: none;
+}
+.ham-menu{
+    float: right;
+    cursor: pointer;
+    font-size: 35px;
+}
+.sidebar{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -200px;
+    width: 200px;
+    background-color: white;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.sidebar-close{
+    font-size: 35px;
+    float: right;
+}
+
+@keyframes open{
+    from{ opacity: 0; }
+    to{opacity: 1;}
+}
