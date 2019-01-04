@@ -1,6 +1,7 @@
 @charset 'utf-8';
 body{
     margin: 0;
+    overflow-x: hidden;
 }
 nav{
     height: 40px;
