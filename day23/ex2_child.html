@@ -12,8 +12,11 @@
 	<button>확인</button>
 	<script>
 		$('button').click(function(){
-			var id = opener.document.getElementById('getId').value;
-			opener.document.getElementById(id).value = $('#data').val();
+			//var id = opener.document.getElementById('getId').value;
+			var id = $(opener.document).find('#getId').val();
+			alert(id);
+			//opener.document.getElementById(id).value = $('#data').val();
+			$(opener.document).find('#'+id).val($('#data').val());
 			window.close();
 		});
 	</script>
