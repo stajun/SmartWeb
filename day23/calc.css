@@ -19,4 +19,11 @@ input{
     line-height: 78px;
     text-align: center;
     cursor: pointer;
+    background-color: white;
+}
+.div-btn:hover{
+    background-color: gainsboro;
+}
+.div-btn:active{
+    background-color: gray;
 }
