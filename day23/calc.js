@@ -26,6 +26,7 @@ $(document).ready(function(){
 	});
 
 	$('.op').click(function(){
+		pointCnt=0;
 		var tmp = parseFloat(input.val());
 		if(!isPushOp || op == '='){
 			switch(op){
@@ -39,6 +40,5 @@ $(document).ready(function(){
 			input.val(num1);
 		}
 		isPushOp = true;
-		console.log(num1);
 	});
 });
