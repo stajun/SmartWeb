@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="//code.jquery.com/jquery-3.3.1.js"></script>
+    <title>Document</title>
+</head>
+<body>
+	국가
+	<input type="text" id="inputCountry" readonly>
+	<button id="countrySearch">조회</button>
+	<script>
+		$(document).ready(function(){
+			$('#countrySearch').click(function(){
+				window.open('c.html','child','width=300, height=300');
+			});
+		})
+	</script>
+</body>
+</html>
